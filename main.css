@@ -1,0 +1,11 @@
+html, body{
+    height: 100%;
+    
+}
+
+.hero{
+    height: 100vh;
+    min-height: 650px;
+    background-color: green;
+
+}
