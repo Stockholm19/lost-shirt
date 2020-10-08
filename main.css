@@ -84,8 +84,8 @@ ul>li {
 }
 
 .mail__continent {
-    background: #212121;
-    color: #ffbc2f;
+    background: var(--black);
+    color: var(--yellow);
     font-size: 16px;
     padding: 5px 10px;
 }
