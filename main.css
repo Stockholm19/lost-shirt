@@ -19,18 +19,27 @@ body {
 }
 
 body {
-    font: 16px / 1.42 "Roboto", Arial, sans-serif;
+    font: 16px / 1.42 "Robato", Arial, sans-serif;
     /* Можно коротки или так.
     font-style: 16px;
     line-height: 1.42em;
-    font-smooth: "Robato", Arial, sans-serif; */
+    font-smooth: "Roboto", Arial, sans-serif; */
 
     color: #212121;
 
-    -webkit-font-smoozing: antialiased;
+    -webkit-font-snoozing: antialiased;
     /*сглаживание шрифтов */
 
-    -moz-osx-font-smoozing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
 }
 
 .hero {
@@ -42,6 +51,7 @@ body {
     background-repeat: no-repeat;
     background-image: url('./img/bg/hero.jpg');
     position: relative;
+    margin-bottom: 130px;
 }
 
 .header {
@@ -57,7 +67,7 @@ body {
     text-decoration: none;
     text-align: center;
     color: inherit;
-    /* inherit - Унаследуй у родителя*/
+    /* inherit - Унаследуй у родителя */
     /* font-size: 16px;
     color: #212121; */
 }
@@ -66,7 +76,7 @@ body {
     margin-bottom: 3px;
 }
 
-.mail__content {
+.mail__continent {
     background: #212121;
     color: #ffbc2f;
     font-size: 16px;
@@ -125,4 +135,38 @@ body {
 
 .lined-text__word:nth-child(2n) {
     margin-left: 8px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.filter__item {
+    margin-right: 40px;
+}
+
+.filter__item:last-child {
+    margin-right: 0;
+}
+
+.filter__link {
+    font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 3px 21px;
+    color: #1b1b1b;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.filter__link:hover {
+    color: #db3a38;
+}
+
+.filter__item--active .filter__link {
+    color: #ffc92f;
+    background-color: #1b1b1b;
 }
