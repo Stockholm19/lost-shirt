@@ -1,11 +1,75 @@
-html, body{
+html,
+body {
     height: 100%;
-    
 }
 
-.hero{
+body {
+    font: 16px / 1.42 "Roboto", Arial, sans-serif;
+    /* Можно коротки или так.
+    font-style: 16px;
+    line-height: 1.42em;
+    font-smooth: "Robato", Arial, sans-serif; */
+
+    color: #212121;
+
+    -webkit-font-smoozing: antialiased;
+    /*сглаживание шрифтов */
+
+    -moz-osx-font-smoozing: grayscale;
+}
+
+.hero {
     height: 100vh;
     min-height: 650px;
-    background-color: green;
+    /* background-image: url('./img/bg/hero.jpg') center center / cover no-repeat; */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./img/bg/hero.jpg');
+    position: relative;
+}
 
+.header {
+    width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.mail {
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+    /* inherit - Унаследуй у родителя*/
+    /* font-size: 16px;
+    color: #212121; */
+}
+
+.mail__title {
+    margin-bottom: 3px;
+}
+
+.mail__content {
+    background: #212121;
+    color: #ffbc2f;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+
+
+
+.fade-slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    height: 72%;
+}
+
+.fade-slider__item {
+    background: url('./img/content/hero/slider_pic_1.png') center center /contain no-repeat;
+    height: 100%;
 }
