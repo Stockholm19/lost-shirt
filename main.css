@@ -12,6 +12,12 @@ body {
     height: 100%;
 }
 
+.wrapper {
+    overflow: hidden;
+    /*Если какой-то блок будет вылезать за wrapper , то он будет обрезан*/
+    min-width: 1310px;
+}
+
 body {
     font: 16px / 1.42 "Roboto", Arial, sans-serif;
     /* Можно коротки или так.
