@@ -4,7 +4,14 @@
         url('./fonts/alegreyasanssc-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+:root {
+    --red: #db3a38;
+    --yellow: #ffc92f;
+    --black: #212121;
+    --white: #ffffff;
+    --titlesFont: 'Yanone Kaffeesatz', Arial, sans-serif;
 }
 
 html,
@@ -25,7 +32,7 @@ body {
     line-height: 1.42em;
     font-smooth: "Roboto", Arial, sans-serif; */
 
-    color: #212121;
+    color: var(--black);
 
     -webkit-font-snoozing: antialiased;
     /*сглаживание шрифтов */
@@ -114,7 +121,7 @@ ul>li {
 
 .lined-text {
     font-family: "alegreya", Arial, sans-serif;
-    color: #ffffff;
+    color: var(--white);
     font-size: 63px;
     text-transform: uppercase;
     display: flex;
@@ -124,13 +131,13 @@ ul>li {
 }
 
 .lined-text__word {
-    background: #000;
+    background: var(--black);
     padding: 0 17px 8px;
     margin-top: -7px;
 }
 
 .lined-text__word--color-yellow {
-    color: #ffbc2f;
+    color: var(--yellow);
 }
 
 .lined-text__word:nth-child(2n) {
@@ -153,20 +160,20 @@ ul>li {
 }
 
 .filter__link {
-    font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+    font-family: var(--titlesFont);
     text-transform: uppercase;
     padding: 3px 21px;
-    color: #1b1b1b;
+    color: var(--black);
     font-weight: 700;
     display: inline-block;
     text-decoration: none;
 }
 
 .filter__link:hover {
-    color: #db3a38;
+    color: var(--red);
 }
 
 .filter__item--active .filter__link {
-    color: #ffc92f;
-    background-color: #1b1b1b;
+    color: var(--yellow);
+    background-color: var(--black);
 }
