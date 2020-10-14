@@ -23,7 +23,7 @@ body {
 .wrapper {
     overflow: hidden;
     /*Если какой-то блок будет вылезать за wrapper , то он будет обрезан*/
-    min-width: 1310px;
+    min-width: 1440px;
 }
 
 .container {
